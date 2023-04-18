@@ -1,6 +1,7 @@
-import Card from "./card";
-import Logic from "./logic";
+import Widget from './Widget';
+import Validator from './Validator';
+import Identificator from './Identificator';
 
-const card = new Card();
-const logic = new Logic(card);
-logic.init();
+new Widget();
+Validator.Validate('widget-card-input');
+Identificator.Identificate('widget-card-input');
