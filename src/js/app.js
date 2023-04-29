@@ -1,7 +1,6 @@
-import Widget from './Widget';
-import Validator from './Validator';
-import Identificator from './Identificator';
+import CardValidator from './CardValidator';
 
-new Widget();
-Validator.Validate('widget-card-input');
-Identificator.Identificate('widget-card-input');
+const parent = document.querySelector('.container');
+const cardValidator = new CardValidator(parent);
+
+cardValidator.init();
